@@ -1,0 +1,368 @@
+/* ОСНОВНЫЕ СТИЛИ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #0a2463;
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ЗАГОЛОВОК */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #e6e6fa; /* Бледно-фиолетовый */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #0a2463;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h1 i {
+    color: #1da1f2;
+    margin-right: 15px;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* ФОРМА - БЛЕДНО-ФИОЛЕТОВЫЙ */
+.form-container {
+    background-color: #e6e6fa; /* Бледно-фиолетовый */
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    color: #0a2463;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* ПОЛЯ ФОРМЫ */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #0a2463;
+    font-size: 1.1rem;
+}
+
+label i {
+    margin-right: 10px;
+    color: #6a5acd;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #d8bfd8;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #fffacd; /* Бледно-желтый */
+    color: #0a2463;
+    transition: all 0.3s;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: 'Arial', sans-serif;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #9370db;
+    box-shadow: 0 0 0 3px rgba(147, 112, 219, 0.2);
+}
+
+/* СЧЕТЧИК СИМВОЛОВ */
+.char-count {
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* КНОПКА - БЛЕДНО-ЗЕЛЕНАЯ */
+button {
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.submit-btn {
+    background-color: #98fb98; /* Бледно-зеленый */
+    color: #0a2463;
+    padding: 16px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 100%;
+    border: 2px solid #90ee90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #90ee90;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(144, 238, 144, 0.3);
+}
+
+/* ТАБЛИЦА */
+.messages-container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.messages-container h2 {
+    color: #0a2463;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* ФИЛЬТРЫ */
+.filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 12px;
+}
+
+.clear-btn {
+    background-color: #ffcccb;
+    color: #0a2463;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 2px solid #ff9999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.clear-btn:hover {
+    background-color: #ff9999;
+}
+
+/* ТАБЛИЦА */
+.table-container {
+    overflow-x: auto;
+    border-radius: 10px;
+    border: 2px solid #e6e6fa;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+thead {
+    background-color: #e6e6fa;
+}
+
+th {
+    padding: 16px;
+    text-align: left;
+    color: #0a2463;
+    font-weight: bold;
+    border-bottom: 3px solid #d8bfd8;
+}
+
+th i {
+    margin-right: 8px;
+}
+
+td {
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+tbody tr:hover {
+    background-color: #f9f9ff;
+}
+
+.empty-row td {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    padding: 40px;
+}
+
+/* КНОПКИ В ТАБЛИЦЕ */
+.delete-btn {
+    background-color: #ffcccc;
+    color: #cc0000;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #ff9999;
+}
+
+.delete-btn:hover {
+    background-color: #ff9999;
+}
+
+.delete-btn:disabled {
+    background-color: #eee;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* СТАТИСТИКА */
+.stats {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    text-align: center;
+    color: #0a2463;
+    font-weight: bold;
+}
+
+.stats span {
+    color: #6a5acd;
+    font-size: 1.2rem;
+}
+
+/* ПОДВАЛ */
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    background-color: #e6e6fa;
+    border-radius: 10px;
+}
+
+.current-user {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.small-btn {
+    background-color: #add8e6;
+    color: #0a2463;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #87ceeb;
+}
+
+/* МОДАЛЬНОЕ ОКНО */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h3 {
+    color: #0a2463;
+    margin-bottom: 20px;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.cancel-btn {
+    background-color: #ffcccb;
+    color: #0a2463;
+    padding: 12px 20px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+/* ОШИБКИ */
+.error {
+    color: #ff3333;
+    font-size: 14px;
+    margin-top: 5px;
+    min-height: 20px;
+}
+
+/* АДАПТИВНОСТЬ */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .filters {
+        flex-direction: column;
+    }
+    
+    th, td {
+        padding: 10px;
+    }
+    
+    .submit-btn {
+        padding: 14px;
+        font-size: 16px;
+    }
+}
